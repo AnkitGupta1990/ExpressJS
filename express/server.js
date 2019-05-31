@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const router = express.Router();
 router.get('/', (req, res) => {
    console.log("start refresh");
-setInterval(function() {
+window.setInterval(function() {
   console.log("I am doing my 5 minutes check");
   // do your stuff here
 }, 1000);
