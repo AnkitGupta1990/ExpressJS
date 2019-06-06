@@ -7,10 +7,9 @@ const bodyParser = require('body-parser');
 const router = express.Router();
 router.get('/', (req, res) => {
   console.log("start refresh");
-setInterval(function() {
-  console.log("I am doing my 5 minutes check");
-  // do your stuff here
-}, 1000);
+  while(true) {
+  console.log("logging....");
+  }
   res.writeHead(200, { 'Content-Type': 'text/html' });
   res.write('<h1>Hello from Express.js!</h1>');
   res.end();
